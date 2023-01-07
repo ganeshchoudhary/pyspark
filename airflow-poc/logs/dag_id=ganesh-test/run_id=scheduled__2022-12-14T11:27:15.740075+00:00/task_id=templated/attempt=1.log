@@ -1,0 +1,38 @@
+[2022-12-15T11:27:40.529+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ganesh-test.templated scheduled__2022-12-14T11:27:15.740075+00:00 [queued]>
+[2022-12-15T11:27:40.540+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: ganesh-test.templated scheduled__2022-12-14T11:27:15.740075+00:00 [queued]>
+[2022-12-15T11:27:40.540+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T11:27:40.540+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2022-12-15T11:27:40.540+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T11:27:40.555+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): templated> on 2022-12-14 11:27:15.740075+00:00
+[2022-12-15T11:27:40.564+0000] {standard_task_runner.py:55} INFO - Started process 1706 to run task
+[2022-12-15T11:27:40.567+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'ganesh-test', 'templated', 'scheduled__2022-12-14T11:27:15.740075+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/BasicDags.py', '--cfg-path', '/tmp/tmpl87qdn2i']
+[2022-12-15T11:27:40.567+0000] {standard_task_runner.py:83} INFO - Job 10: Subtask templated
+[2022-12-15T11:27:40.624+0000] {task_command.py:389} INFO - Running <TaskInstance: ganesh-test.templated scheduled__2022-12-14T11:27:15.740075+00:00 [running]> on host 0b34e9339e8a
+[2022-12-15T11:27:40.695+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ganesh-test
+AIRFLOW_CTX_TASK_ID=templated
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-14T11:27:15.740075+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-14T11:27:15.740075+00:00
+[2022-12-15T11:27:40.696+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-15T11:27:40.697+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n\n    echo "2022-12-14"\n    echo "2022-12-21"\n\n    echo "2022-12-14"\n    echo "2022-12-21"\n\n    echo "2022-12-14"\n    echo "2022-12-21"\n\n    echo "2022-12-14"\n    echo "2022-12-21"\n\n    echo "2022-12-14"\n    echo "2022-12-21"\n']
+[2022-12-15T11:27:40.712+0000] {subprocess.py:86} INFO - Output:
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-14
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-21
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-14
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-21
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-14
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-21
+[2022-12-15T11:27:40.714+0000] {subprocess.py:93} INFO - 2022-12-14
+[2022-12-15T11:27:40.715+0000] {subprocess.py:93} INFO - 2022-12-21
+[2022-12-15T11:27:40.715+0000] {subprocess.py:93} INFO - 2022-12-14
+[2022-12-15T11:27:40.715+0000] {subprocess.py:93} INFO - 2022-12-21
+[2022-12-15T11:27:40.715+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-15T11:27:40.736+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=ganesh-test, task_id=templated, execution_date=20221214T112715, start_date=20221215T112740, end_date=20221215T112740
+[2022-12-15T11:27:40.782+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-15T11:27:40.797+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

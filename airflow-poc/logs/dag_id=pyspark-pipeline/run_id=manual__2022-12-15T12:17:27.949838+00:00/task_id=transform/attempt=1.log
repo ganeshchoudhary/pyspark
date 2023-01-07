@@ -1,0 +1,23 @@
+[2022-12-15T12:17:29.712+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: pyspark-pipeline.transform manual__2022-12-15T12:17:27.949838+00:00 [queued]>
+[2022-12-15T12:17:29.719+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: pyspark-pipeline.transform manual__2022-12-15T12:17:27.949838+00:00 [queued]>
+[2022-12-15T12:17:29.719+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T12:17:29.719+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2022-12-15T12:17:29.719+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T12:17:29.732+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): transform> on 2022-12-15 12:17:27.949838+00:00
+[2022-12-15T12:17:29.739+0000] {standard_task_runner.py:55} INFO - Started process 5785 to run task
+[2022-12-15T12:17:29.742+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'pyspark-pipeline', 'transform', 'manual__2022-12-15T12:17:27.949838+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/PysparkPipelineDag.py', '--cfg-path', '/tmp/tmp5xeksqls']
+[2022-12-15T12:17:29.742+0000] {standard_task_runner.py:83} INFO - Job 17: Subtask transform
+[2022-12-15T12:17:29.791+0000] {task_command.py:389} INFO - Running <TaskInstance: pyspark-pipeline.transform manual__2022-12-15T12:17:27.949838+00:00 [running]> on host 0b34e9339e8a
+[2022-12-15T12:17:29.847+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pyspark-pipeline
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-15T12:17:27.949838+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-15T12:17:27.949838+00:00
+[2022-12-15T12:17:29.865+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-15T12:17:29.873+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=pyspark-pipeline, task_id=transform, execution_date=20221215T121727, start_date=20221215T121729, end_date=20221215T121729
+[2022-12-15T12:17:29.915+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-15T12:17:29.932+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

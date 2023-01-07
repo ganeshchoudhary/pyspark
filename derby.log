@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Sep 26 14:14:43 IST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0183-78f8-503c-0000265dccd8 
+on database directory /home/ganesh/Desktop/Kaleidofin/services/ETL-batch/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@3be23894 
+Loaded from file:/home/ganesh/Desktop/Kaleidofin/services/ETL-batch/etl-env/lib/python3.8/site-packages/pyspark/jars/derby-10.12.1.1.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_342-8u342-b07-0ubuntu1~20.04-b07
+user.dir=/home/ganesh/Desktop/Kaleidofin/services/ETL-batch
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-48-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

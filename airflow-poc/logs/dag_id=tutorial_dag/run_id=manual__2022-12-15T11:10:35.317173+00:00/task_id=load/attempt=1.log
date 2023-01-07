@@ -1,0 +1,24 @@
+[2022-12-15T11:10:38.358+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tutorial_dag.load manual__2022-12-15T11:10:35.317173+00:00 [queued]>
+[2022-12-15T11:10:38.366+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tutorial_dag.load manual__2022-12-15T11:10:35.317173+00:00 [queued]>
+[2022-12-15T11:10:38.366+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T11:10:38.366+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2022-12-15T11:10:38.366+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-15T11:10:38.378+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load> on 2022-12-15 11:10:35.317173+00:00
+[2022-12-15T11:10:38.384+0000] {standard_task_runner.py:55} INFO - Started process 411 to run task
+[2022-12-15T11:10:38.386+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tutorial_dag', 'load', 'manual__2022-12-15T11:10:35.317173+00:00', '--job-id', '6', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/tutorial_dag.py', '--cfg-path', '/tmp/tmpkie38i8x']
+[2022-12-15T11:10:38.387+0000] {standard_task_runner.py:83} INFO - Job 6: Subtask load
+[2022-12-15T11:10:38.427+0000] {task_command.py:389} INFO - Running <TaskInstance: tutorial_dag.load manual__2022-12-15T11:10:35.317173+00:00 [running]> on host 0b34e9339e8a
+[2022-12-15T11:10:38.470+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tutorial_dag
+AIRFLOW_CTX_TASK_ID=load
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-15T11:10:35.317173+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-15T11:10:35.317173+00:00
+[2022-12-15T11:10:38.477+0000] {logging_mixin.py:137} INFO - {'total_order_value': 1236.7}
+[2022-12-15T11:10:38.477+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-15T11:10:38.483+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tutorial_dag, task_id=load, execution_date=20221215T111035, start_date=20221215T111038, end_date=20221215T111038
+[2022-12-15T11:10:38.518+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-15T11:10:38.531+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
